@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0f7e9, #fef9e7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 520px;
+}
+
+h2 {
+    text-align: center;
+    color: #2d4a22;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #d0d4da;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4cae50;
+    outline: none;
+}
+
+button {
+    background-color: #4cae50; /* hijau utama */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px 2px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#todoList li {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border: 1px solid #e2e6e9;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+#todoList li.completed {
+    background-color: #f9fbe7; /* kuning muda */
+    text-decoration: line-through;
+    color: #666;
+}
+
+#todoList li button {
+    background-color: #ffb300; /* kuning terang */
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+#todoList li button:hover {
+    background-color: #f57c00;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+span#hasil {
+    font-weight: bold;
+    color: #0277bd; /* biru cerah */
+}
+
+button#btnPangkat {
+    background-color: #0277bd;
+}
+button#btnPangkat:hover {
+    background-color: #01579b;
+}
+
+button#btnAkar {
+    background-color: #ffb300;
+}
+button#btnAkar:hover {
+    background-color: #f57c00;
+}
+
+button#btnModulus {
+    background-color: #4cae50;
+}
+button#btnModulus:hover {
+    background-color: #388e3c;
+}
