@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List, Kalkulator & Validasi Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List Sederhana</h1>
+        <input type="text" id="newItem" placeholder="Tambahkan item baru">
+        <button id="btnAdd">Tambah Item</button>
+        <ul id="todoList"></ul>
+
+        <h1>Kalkulator Tambahan</h1>
+        <input type="number" id="angka1" placeholder="Angka pertama">
+        <input type="number" id="angka2" placeholder="Angka kedua">
+        <div class="button-group">
+            <button id="btnPangkat">Pangkat</button>
+            <button id="btnAkar">Akar Kuadrat</button>
+            <button id="btnModulus">Modulus</button>
+        </div>
+        <p>Hasil: <span id="hasil"></span></p>
+
+        <h1>Form Validasi Input</h1>
+        <form id="formValidasi">
+            <input type="text" id="nama" placeholder="Nama (min 4 karakter)">
+            <small id="errorNama" class="error-msg"></small>
+            
+            <input type="email" id="email" placeholder="Email yang valid">
+            <small id="errorEmail" class="error-msg"></small>
+            
+            <input type="password" id="password" placeholder="Password minimal 8 karakter">
+            <small id="errorPassword" class="error-msg"></small>
+            
+            <button type="submit">Validasi</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
